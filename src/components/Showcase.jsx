@@ -2,6 +2,7 @@ import React from 'react';
 import {useMediaQuery} from "react-responsive";
 import {useGSAP} from "@gsap/react";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const Showcase = () => {
     const isTablet = useMediaQuery({query: '(max-width: 1024px)'});
@@ -20,9 +21,10 @@ const Showcase = () => {
             timeline
                 .to('.mask img', {
                     transform: 'scale(1.1)'
-            }).to('.content', {opacity:1, y:0, ease: 'power1.in'})
+            }).to('.content', {opacity:1, y:0, ease: 'power1.in'});
         }
-    }, { dependencies: [isTablet], revertOnUpdate: true })
+    }, [isTablet])
+
     return (
         <section id="showcase">
             <div className="media">
@@ -43,7 +45,6 @@ const Showcase = () => {
                                 Introducing {" "}
                                 <span className="text-white">
                                     M4, the next generation of Apple silicon
-
                                 </span>
                                 . M4 powers
                             </p>
