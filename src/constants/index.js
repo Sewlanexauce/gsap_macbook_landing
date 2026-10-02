@@ -74,7 +74,7 @@ export const performanceImgPositions = [
     },
 ];
 
-const features = [
+export const features = [
     {
         id: 1,
         icon: "/feature-icon1.svg",
@@ -112,7 +112,7 @@ const features = [
     },
 ];
 
-const featureSequence = [
+export const featureSequence = [
     { videoPath: "/videos/feature-1.mp4", boxClass: ".box1", delay: 1 },
     { videoPath: "/videos/feature-2.mp4", boxClass: ".box2", delay: 0 },
     { videoPath: "/videos/feature-3.mp4", boxClass: ".box3", delay: 0 },
