@@ -14,6 +14,13 @@ import useMacbookStore from "../../store/Index.js";
 import {noChangeParts} from "../../constants/index.js";
 import {Color} from "three";
 
+/**
+ * Renders the MacBook with the store's color and video texture on its screen.
+ * Preserves the original colors of meshes listed in noChangeParts.
+ *
+ * @param {import('@react-three/fiber').ThreeElements['group']} props - Props forwarded to the model's root group.
+ * @returns {React.JSX.Element} The group containing the MacBook meshes.
+ */
 export default function MacbookModel(props) {
   const {color, texture} = useMacbookStore();
   const { nodes, materials, scene} = useGLTF('/models/macbook-transformed.glb')

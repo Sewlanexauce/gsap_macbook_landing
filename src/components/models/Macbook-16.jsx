@@ -14,6 +14,13 @@ import useMacbookStore from "../../store";
 import {noChangeParts} from "../../constants/index.js";
 import {Color, SRGBColorSpace} from "three";
 
+/**
+ * Renders the 16-inch MacBook with a static screen image and the store's color.
+ * Preserves the original colors of meshes listed in noChangeParts.
+ *
+ * @param {import('@react-three/fiber').ThreeElements['group']} props - Props forwarded to the model's root group.
+ * @returns {React.JSX.Element} The group containing the MacBook meshes.
+ */
 export default function MacbookModel16(props) {
     const {color} = useMacbookStore();
     const { nodes, materials,scene } = useGLTF('/models/macbook-16-transformed.glb')
