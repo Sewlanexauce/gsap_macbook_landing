@@ -26,7 +26,7 @@ export const noChangeParts = [
     "Object_10",
 ];
 
-const performanceImages = [
+export const performanceImages = [
     { id: "p1", src: "/performance1.png" },
     { id: "p2", src: "/performance2.png" },
     { id: "p3", src: "/performance3.png" },
@@ -36,7 +36,7 @@ const performanceImages = [
     { id: "p7", src: "/performance7.png" },
 ];
 
-const performanceImgPositions = [
+export const performanceImgPositions = [
     {
         id: "p1",
         left: 5,
@@ -74,7 +74,7 @@ const performanceImgPositions = [
     },
 ];
 
-const features = [
+export const features = [
     {
         id: 1,
         icon: "/feature-icon1.svg",
@@ -112,7 +112,7 @@ const features = [
     },
 ];
 
-const featureSequence = [
+export const featureSequence = [
     { videoPath: "/videos/feature-1.mp4", boxClass: ".box1", delay: 1 },
     { videoPath: "/videos/feature-2.mp4", boxClass: ".box2", delay: 0 },
     { videoPath: "/videos/feature-3.mp4", boxClass: ".box3", delay: 0 },
@@ -120,7 +120,7 @@ const featureSequence = [
     { videoPath: "/videos/feature-5.mp4", boxClass: ".box5", delay: 0 },
 ];
 
-const footerLinks = [
+export const footerLinks = [
     { label: "Privacy Policy", link: "#" },
     { label: "Terms of Use", link: "#" },
     { label: "Sales Policy", link: "#" },
