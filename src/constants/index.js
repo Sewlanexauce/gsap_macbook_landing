@@ -26,7 +26,7 @@ export const noChangeParts = [
     "Object_10",
 ];
 
-const performanceImages = [
+export const performanceImages = [
     { id: "p1", src: "/performance1.png" },
     { id: "p2", src: "/performance2.png" },
     { id: "p3", src: "/performance3.png" },
@@ -36,7 +36,7 @@ const performanceImages = [
     { id: "p7", src: "/performance7.png" },
 ];
 
-const performanceImgPositions = [
+export const performanceImgPositions = [
     {
         id: "p1",
         left: 5,
